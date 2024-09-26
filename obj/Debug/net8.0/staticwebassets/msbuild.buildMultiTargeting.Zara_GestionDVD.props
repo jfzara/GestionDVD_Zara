@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Zara_GestionDVD.props" />
+</Project>

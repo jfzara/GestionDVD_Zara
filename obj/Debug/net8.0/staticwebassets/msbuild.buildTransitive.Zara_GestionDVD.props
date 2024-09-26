@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Zara_GestionDVD.props" />
+</Project>

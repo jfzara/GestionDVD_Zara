@@ -1,0 +1,33 @@
+﻿@model Zara_GestionDVD.Models.Utilisateur
+
+<h2>Créer un compte</h2>
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="Prenom" class="control-label"></label>
+        <input asp-for="Prenom" class="form-control" />
+        <span asp-validation-for="Prenom" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Courriel" class="control-label"></label>
+        <input asp-for="Courriel" class="form-control" />
+        <span asp-validation-for="Courriel" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MotDePasse" class="control-label"></label>
+        <input asp-for="MotDePasse" class="form-control" type="password" />
+        <span asp-validation-for="MotDePasse" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="RecevoirNotifications" class="control-label"></label>
+        <input asp-for="RecevoirNotifications" type="checkbox" />
+        <span asp-validation-for="RecevoirNotifications" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Créer un compte" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Login">Déjà un compte? Connectez-vous ici</a>
+</div>

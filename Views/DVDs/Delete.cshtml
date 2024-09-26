@@ -1,0 +1,149 @@
+﻿@model Zara_GestionDVD.Models.DVD
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "_Layout";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>DVD</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TitreFrancais)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TitreFrancais)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TitreOriginal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TitreOriginal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AnneeSortie)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AnneeSortie)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Categorie)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Categorie)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DerniereMiseAJour)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DerniereMiseAJour)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DerniereMiseAJourPar)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DerniereMiseAJourPar)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DescriptionSuppléments)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DescriptionSuppléments)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Duree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Duree)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EstDVDOriginal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EstDVDOriginal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Format)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Format)
+        </dd>
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LanguesDisponibles)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LanguesDisponibles)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NombreDisques)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NombreDisques)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomProducteur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomProducteur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NomRealisateur)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomRealisateur)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ActeursPrincipaux)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ActeursPrincipaux)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ResumeFilm)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ResumeFilm)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SousTitresDisponibles)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SousTitresDisponibles)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PropriétaireId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PropriétaireId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmprunteurId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmprunteurId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VersionEtendue)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VersionEtendue)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.VisibleATous)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.VisibleATous)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
